@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator-wrapper">
+    <div class="calculator">
+      <div class="output">
+        <input
+              type="text"
+              placeholder=""
+              readonly
+              class="account"
+        >
+        <input type="text" placeholder="0" readonly class="result">
+      </div>
+      <div class="calculator__item clean color1" onclick="clean()">AC</div>
+      <div class="calculator__item color1" onclick="backspace()">⟵</div>
+      <div class="calculator__item color2" onclick="toResult('/')">&divide;</div>
+      <div class="calculator__item" onclick="toResult('7')">7</div>
+      <div class="calculator__item" onclick="toResult('8')">8</div>
+      <div class="calculator__item" onclick="toResult('9')">9</div>
+      <div class="calculator__item color2" onclick="toResult('*')">&times;</div>
+      <div class="calculator__item" onclick="toResult('4')">4</div>
+      <div class="calculator__item" onclick="toResult('5')">5</div>
+      <div class="calculator__item" onclick="toResult('6')">6</div>
+      <div class="calculator__item color2" onclick="toResult('-')">−</div>
+      <div class="calculator__item" onclick="toResult('1')">1</div>
+      <div class="calculator__item" onclick="toResult('2')">2</div>
+      <div class="calculator__item" onclick="toResult('3')">3</div>
+      <div class="calculator__item color2" onclick="toResult('+')">+</div>
+      <div class="calculator__item zero" onclick="toResult('0')">0</div>
+      <div class="calculator__item" onclick="toResult('.')">.</div>
+      <div class="calculator__item color2" onclick="result('')">=</div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

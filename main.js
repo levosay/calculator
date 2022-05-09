@@ -8,7 +8,6 @@ const toResult = (num) => {
     if (last === num && last === '.') {
         return (inputCalc.value)
     } else {
-        console.log('pidr')
         inputCalc.value = inputCalc.value + num
     }
     if (num === '.') {
